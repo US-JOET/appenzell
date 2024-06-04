@@ -99,7 +99,7 @@ WORKDIR /home
 
 RUN git clone https://github.com/US-JOET/libocpp.git \ 
     && cd libocpp \
-    && git switch folkengine/k08-core-algo-txprofile \
+    && git switch charin-demo \
     && cmake  -B build -G Ninja -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX="./dist" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
     && ninja -j$(nproc) -C build install
 

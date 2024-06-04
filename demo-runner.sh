@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd /home/libocpp/build/tests
-./libocpp_unit_tests --gtest_filter=*ChargepointTestFixtureV201.K08_CalculateCompositeSchedule_InitializeEnhancedCompositeSchedule
+./charin_demo_bin --input-dir="${TEST_INPUT}/" --output-dir="${TEST_OUTPUT}/"

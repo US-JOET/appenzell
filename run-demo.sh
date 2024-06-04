@@ -29,9 +29,9 @@ read_flags() {
 
 download_demo_image() {
     if [ -z "$(docker images -q "${DEMO_DOCKER_IMAGE}" 2> /dev/null)" ]; then
-        docker pull "$1"
+        docker pull --platform linux/amd64 "${DEMO_DOCKER_IMAGE}"
         if [[ "$?" != 0 ]]; then
-            echo "Error: Failed to retrieve \"${repo_file_path}\" from the chrin"
+            echo "Error: Failed to retrieve \"${DEMO_DOCKER_IMAGE}\" from the US-JOET"
         echo 'repository. If this issue persists, please report this as an'
         echo 'issue in the EVerest project:'
         echo '    https://github.com/EVerest/EVerest/issues'
@@ -40,7 +40,7 @@ download_demo_image() {
     fi
 }
 
-download_demo_image "${DEMO_DOCKER_IMAGE}"
+download_demo_image
 
 read_flags
 
