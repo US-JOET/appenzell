@@ -40,7 +40,7 @@ download_demo_image() {
     fi
 }
 
-download_demo_image "${DEMO_DOCKER_IMAGE}"
+download_demo_image
 
 read_flags
 
