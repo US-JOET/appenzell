@@ -3,12 +3,16 @@
 DEMO_DOCKER_IMAGE='ghcr.io/us-joet/appenzell:latest'
 DOCKER_VOLUME=""
 DOCKER_ENV=""
+START_TIME=""
+END_TIME=""
 
-while getopts i:o: flag
+while getopts i:o:s:e: flag
 do
     case "${flag}" in
         i) inputDir=${OPTARG};;
         o) outputDir=${OPTARG};;
+        s) start_time=${OPTARG};;
+        e) end_time=${OPTARG};;
     esac
 done
 
@@ -18,6 +22,20 @@ read_flags() {
         DOCKER_ENV="${DOCKER_ENV} -e TEST_INPUT=/input"
     else
         echo "The i flag is required"
+        exit 1
+    fi
+
+    if [[ ! -z "$start_time" ]]; then
+        DOCKER_ENV="${DOCKER_ENV} -e START_TIME=${start_time}"
+    else
+        echo "The start flag is required"
+        exit 1
+    fi
+
+    if [[ ! -z "$end_time" ]]; then
+        DOCKER_ENV="${DOCKER_ENV} -e END_TIME=${end_time}"
+    else
+        echo "The end flag is required"
         exit 1
     fi
 
