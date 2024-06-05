@@ -8,11 +8,20 @@ If there is not it will pull it in locally.
 
 There are two flags
 
-`-i` - required input directory of json charging profiles
-`-o` - optional output directory for the generated composite schedule.
+```txt
+    `-i` - required input directory of json charging profiles
+    `-o` - optional output directory for the generated composite schedule.
+```
 
 You can create a directory on your host with the needed charging profile json files.
 If you would like to save the composite schedule output json to the host you can use the optional output directory.
+
+For example:
+
+```bash
+$> export APPENZELL_HOME="${HOME}/src/github.com/US-JOET/appenzell"
+$> ./run-demo.sh -i "${APPENZELL_HOME}/scenarios/case_one/" -o "${APPENZELL_HOME}/output/"
+```
 
 ## Current charin_demo under the hood
 
