@@ -33,8 +33,10 @@ If there is not it will pull it in locally.
 There are two flags
 
 ```txt
-    `-i` - required input directory of json charging profiles
-    `-o` - optional output directory for the generated composite schedule.
+    -i - required input directory of json charging profiles
+    -o - optional output directory for the generated composite schedule.
+    -s - required start time
+    -e - required end time
 ```
 
 You can create a directory on your host with the needed charging profile json files.
@@ -43,8 +45,8 @@ If you would like to save the composite schedule output json to the host you can
 For example:
 
 ```bash
-$> export APPENZELL_HOME="${HOME}/src/github.com/US-JOET/appenzell"
-$> ./run-demo.sh -i "${APPENZELL_HOME}/scenarios/case_one/" -o "${APPENZELL_HOME}/output/"
+$> export APPENZELL_HOME="${HOME}/directory/to/US-JOET/appenzell"
+$> ./run-demo.sh -i "${APPENZELL_HOME}/scenarios/case_one/" -o "${APPENZELL_HOME}/output/" -s "2024-01-17T18:01:00" -e "2024-01-18T06:00:00"
 ...
 composite_schedule: {
     "chargingRateUnit": "W",
