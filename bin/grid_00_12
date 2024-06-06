@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+./run-demo.sh -i "${APPENZELL_HOME}/scenarios/grid/" -o "${APPENZELL_HOME}/output/" -s "2024-01-17T00:00:00" -e "2024-01-17T12:00:00"
