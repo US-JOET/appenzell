@@ -95,3 +95,11 @@ You can build a version of the docker container locally if desired. To do so run
 
 This can be used to change the git branch that is used internally for composite schedule generation.
 
+## Demo
+
+```shell
+baseline
+grid
+grid_00_12
+grid_18_18
+```
