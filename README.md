@@ -5,6 +5,8 @@ noun - [ˈapn̩ˌt͡sɛl]
 1. A command-line tool for converting OCPP 2.0.1 Smart Charging Profiles into Composite Schedules.
 2. The Swiss canton that existed 1403 to 1597 that is the location of the earliest known yodel, which happened in 1545. It is described as "the call of a cowherd from Appenzell." - [source](https://en.wikipedia.org/wiki/Yodeling#History_of_Alpine_yodeling)
 
+Appenzell is an integration testing tool designed to facilitate fast feedback in isolating Smart Charging issues. 
+
 ## Setup
 
 You will need [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed on your system. You should
