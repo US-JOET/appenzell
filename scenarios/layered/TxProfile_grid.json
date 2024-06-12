@@ -1,129 +1,129 @@
 {
   "id": 24,
   "chargingProfileKind": "Recurring",
-  "chargingProfilePurpose": "TxDefaultProfile",
+  "chargingProfilePurpose": "TxProfile",
   "chargingSchedule": [
     {
       "id": 0,
       "chargingRateUnit": "W",
       "chargingSchedulePeriod": [
         {
-          "limit": 500.0,
+          "limit": 1.0,
           "numberPhases": 1,
           "startPeriod": 0
         },
         {
-          "limit": 1000.0,
+          "limit": 2.0,
           "numberPhases": 1,
           "startPeriod": 3600
         },
         {
-          "limit": 1500.0,
+          "limit": 3.0,
           "numberPhases": 1,
           "startPeriod": 7200
         },
         {
-          "limit": 2000.0,
+          "limit": 4.0,
           "numberPhases": 1,
           "startPeriod": 10800
         },
         {
-          "limit": 2500.0,
+          "limit": 5.0,
           "numberPhases": 1,
           "startPeriod": 14400
         },
         {
-          "limit": 3000.0,
+          "limit": 6.0,
           "numberPhases": 1,
           "startPeriod": 18000
         },
         {
-          "limit": 3500.0,
+          "limit": 7.0,
           "numberPhases": 1,
           "startPeriod": 21600
         },
         {
-          "limit": 4000.0,
+          "limit": 8.0,
           "numberPhases": 1,
           "startPeriod": 25200
         },
         {
-          "limit": 4500.0,
+          "limit": 9.0,
           "numberPhases": 1,
           "startPeriod": 28800
         },
         {
-          "limit": 5000.0,
+          "limit": 10.0,
           "numberPhases": 1,
           "startPeriod": 32400
         },
         {
-          "limit": 5500.0,
+          "limit": 11.0,
           "numberPhases": 1,
           "startPeriod": 36000
         },
         {
-          "limit": 6000.0,
+          "limit": 12.0,
           "numberPhases": 1,
           "startPeriod": 39600
         },
         {
-          "limit": 6500.0,
+          "limit": 13.0,
           "numberPhases": 1,
           "startPeriod": 43200
         },
         {
-          "limit": 7000.0,
+          "limit": 14.0,
           "numberPhases": 1,
           "startPeriod": 46800
         },
         {
-          "limit": 7500.0,
+          "limit": 15.0,
           "numberPhases": 1,
           "startPeriod": 50400
         },
         {
-          "limit": 8000.0,
+          "limit": 16.0,
           "numberPhases": 1,
           "startPeriod": 54000
         },
         {
-          "limit": 8500.0,
+          "limit": 17.0,
           "numberPhases": 1,
           "startPeriod": 57600
         },
         {
-          "limit": 9000.0,
+          "limit": 18.0,
           "numberPhases": 1,
           "startPeriod": 61200
         },
         {
-          "limit": 9500.0,
+          "limit": 19.0,
           "numberPhases": 1,
           "startPeriod": 64800
         },
         {
-          "limit": 10000.0,
+          "limit": 20.0,
           "numberPhases": 1,
           "startPeriod": 68400
         },
         {
-          "limit": 10500.0,
+          "limit": 21.0,
           "numberPhases": 1,
           "startPeriod": 72000
         },
         {
-          "limit": 11000.0,
+          "limit": 22.0,
           "numberPhases": 1,
           "startPeriod": 75600
         },
         {
-          "limit": 11500.0,
+          "limit": 23.0,
           "numberPhases": 1,
           "startPeriod": 79200
         },
         {
-          "limit": 12000.0,
+          "limit": 24.0,
           "numberPhases": 1,
           "startPeriod": 82800
         }
