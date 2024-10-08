@@ -3,9 +3,11 @@
 noun - [ˈapn̩ˌt͡sɛl]
 
 1. A command-line tool for converting OCPP 2.0.1 Smart Charging Profiles into Composite Schedules.
-2. The Swiss canton that existed 1403 to 1597 that is the location of the earliest known yodel, which happened in 1545. It is described as "the call of a cowherd from Appenzell." - [source](https://en.wikipedia.org/wiki/Yodeling#History_of_Alpine_yodeling)
+2. The Swiss canton that existed 1403 to 1597 that is the location of the earliest known yodel, which 
+   happened in 1545. It is described as "the call of a cowherd from Appenzell." - [source](https://en.wikipedia.org/wiki/Yodeling#History_of_Alpine_yodeling)
 
-Appenzell is an integration testing tool designed to facilitate fast feedback in isolating Smart Charging issues. 
+Appenzell is a testing tool that allows you to generate a Composite Schedule from the command line. It is 
+designed to facilitate fast feedback in isolating Smart Charging issues. 
 
 ## Setup
 
@@ -32,13 +34,16 @@ The script `run-demo.sh` is used locally on the host to run the demo.
 When running the script will check for a local image of `ghcr.io/us-joet/appenzell:latest`.
 If there is not it will pull it in locally.
 
-There are two flags
+There are four flags
 
 ```txt
+REQUIRED:   
     -i - required input directory of json charging profiles
-    -o - optional output directory for the generated composite schedule.
     -s - required start time
     -e - required end time
+
+OPTIONAL:
+    -o - optional output directory for the generated composite schedule.
 ```
 
 You can create a directory on your host with the needed charging profile json files.
@@ -99,9 +104,10 @@ This can be used to change the git branch that is used internally for composite 
 
 ## Demo
 
-```shell
-baseline
-grid
-grid_00_12
-grid_18_18
-```
+The `bin` directory has several preconfigued demos using profiles stored in the subfolders of the
+`scenarios` directory. Make sure you've run `run-demo.sh` first. 
+
+- `bin/baseline`
+- `bin/grid`
+- `bin/grid_00_12`
+- `bin/grid_18_18`
