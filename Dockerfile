@@ -103,6 +103,6 @@ RUN git clone https://github.com/US-JOET/libocpp.git \
     && cmake  -B build -G Ninja -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX="./dist" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
     && ninja -j$(nproc) -C build install
 
-COPY --chmod=+x ./demo-runner.sh ./
+COPY --chmod=755 ./demo-runner.sh ./
 
 CMD [ "bash", "./demo-runner.sh" ]
